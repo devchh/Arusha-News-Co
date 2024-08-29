@@ -1,0 +1,485 @@
+Last login: Wed Aug 28 14:04:12 on ttys002
+/Users/devchhatbar/.zshrc:.:7: no such file or directory: /Users/devchhatbar/fsl/etc/fslconf/fsl.sh%
+devchhatbar@Devs-MBP ~ % cd Arusha
+cd: no such file or directory: Arusha
+devchhatbar@Devs-MBP ~ % cd Desktop 
+devchhatbar@Devs-MBP Desktop % cd Arusha
+devchhatbar@Devs-MBP Arusha % npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (arusha) 
+version: (1.0.0) 
+description: News Service for Arusha, Tanzania.
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: 
+author: Dev Chhatbar
+license: (ISC) 
+About to write to /Users/devchhatbar/Desktop/Arusha/package.json:
+
+{
+  "name": "arusha",
+  "version": "1.0.0",
+  "description": "News Service for Arusha, Tanzania.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dev Chhatbar",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+
+devchhatbar@Devs-MBP Arusha % npm install express twilio
+
+added 95 packages, and audited 96 packages in 5s
+
+13 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+devchhatbar@Devs-MBP Arusha % npm ls
+arusha@1.0.0 /Users/devchhatbar/Desktop/Arusha
+├── express@4.19.2
+└── twilio@5.2.3
+
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port}`);
+^C  
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port});
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:3000);
+^X^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:3000);
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port});
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port});
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port});
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port});
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port});
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port}`);
+Error: ENOENT: no such file or directory, stat '/Users/devchhatbar/Desktop/Arusha/public/index.html'
+^[[A
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port}`);
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Example app listening at http://localhost:${port}`);
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+node:internal/modules/cjs/loader:1251
+  throw err;
+  ^
+
+Error: Cannot find module 'mongoose'
+Require stack:
+- /Users/devchhatbar/Desktop/Arusha/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1248:15)
+    at Module._load (node:internal/modules/cjs/loader:1074:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1339:12)
+    at require (node:internal/modules/helpers:126:16)
+    at Object.<anonymous> (/Users/devchhatbar/Desktop/Arusha/index.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1691:10)
+    at Module.load (node:internal/modules/cjs/loader:1317:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/Users/devchhatbar/Desktop/Arusha/index.js' ]
+}
+
+Node.js v22.7.0
+devchhatbar@Devs-MBP Arusha % npm install express mongoose body-parser cors dotenv
+
+
+added 23 packages, and audited 119 packages in 5s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+devchhatbar@Devs-MBP Arusha % node index.js                                       
+Server is running on http://localhost:3000
+MongoDB connection error: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:219:11)
+    at NativeConnection.openUri (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:823:34)
+    at Mongoose.connect (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/mongoose.js:447:15)
+    at Object.<anonymous> (/Users/devchhatbar/Desktop/Arusha/index.js:16:10)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1691:10)
+    at Module.load (node:internal/modules/cjs/loader:1317:32)
+    at Module._load (node:internal/modules/cjs/loader:1127:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+(node:38981) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38981) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Server is running on http://localhost:3000
+MongoDB connection error: MongooseServerSelectionError: connection <monitor> to [::1]:3000 closed
+    at _handleConnectionErrors (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:897:11)
+    at NativeConnection.openUri (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:848:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:3000' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+(node:39128) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:39128) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Server is running on http://localhost:3000
+MongoDB connection error: MongooseServerSelectionError: connection <monitor> to [::1]:3000 closed
+    at _handleConnectionErrors (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:897:11)
+    at NativeConnection.openUri (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:848:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:3000' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+^C
+devchhatbar@Devs-MBP Arusha % mongod
+zsh: command not found: mongod
+devchhatbar@Devs-MBP Arusha % MONGO_URI=mongodb://localhost:27017/arusha-news
+
+devchhatbar@Devs-MBP Arusha % node index.js                                  
+Server is running on http://localhost:3000
+MongoDB connection error: MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:897:11)
+    at NativeConnection.openUri (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:848:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Server is running on http://localhost:3000
+MongoDB connection error: MongooseServerSelectionError: connection <monitor> to [::1]:3000 closed
+    at _handleConnectionErrors (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:897:11)
+    at NativeConnection.openUri (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:848:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:3000' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+^C
+devchhatbar@Devs-MBP Arusha % cd
+devchhatbar@Devs-MBP ~ % brew tap mongodb/brew
+==> Tapping mongodb/brew
+Cloning into '/opt/homebrew/Library/Taps/mongodb/homebrew-brew'...
+remote: Enumerating objects: 1434, done.
+remote: Counting objects: 100% (483/483), done.
+remote: Compressing objects: 100% (168/168), done.
+remote: Total 1434 (delta 407), reused 332 (delta 315), pack-reused 951 (from 1)
+Receiving objects: 100% (1434/1434), 311.67 KiB | 368.00 KiB/s, done.
+Resolving deltas: 100% (845/845), done.
+Tapped 17 formulae (35 files, 398.8KB).
+devchhatbar@Devs-MBP ~ % brew update
+==> Updating Homebrew...
+Already up-to-date.
+devchhatbar@Devs-MBP ~ % brew install mongodb-community@7.0
+==> Fetching dependencies for mongodb/brew/mongodb-community: mongodb/brew/mongodb-database-tools and mongosh
+==> Fetching mongodb/brew/mongodb-database-tools
+==> Downloading https://fastdl.mongodb.org/tools/db/mongodb-database-tools-macos-arm64-100.9.5.zip
+###################################################################################################################################################### 100.0%
+==> Fetching mongosh
+==> Downloading https://ghcr.io/v2/homebrew/core/mongosh/manifests/2.3.0
+###################################################################################################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/mongosh/blobs/sha256:30ae1687f4caed315ba8ee84f1ebf4ec106d94e94d6004ac7793baab42c08827
+###################################################################################################################################################### 100.0%
+==> Fetching mongodb/brew/mongodb-community
+==> Downloading https://fastdl.mongodb.org/osx/mongodb-macos-arm64-7.0.14.tgz
+###################################################################################################################################################### 100.0%
+==> Installing mongodb-community from mongodb/brew
+Warning: Your Xcode (15.0.1) is outdated.
+Please update to Xcode 15.4 (or delete it).
+Xcode can be updated from the App Store.
+
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 15.4.
+
+==> Installing dependencies for mongodb/brew/mongodb-community: mongodb/brew/mongodb-database-tools and mongosh
+==> Installing mongodb/brew/mongodb-community dependency: mongodb/brew/mongodb-database-tools
+Warning: Your Xcode (15.0.1) is outdated.
+Please update to Xcode 15.4 (or delete it).
+Xcode can be updated from the App Store.
+
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 15.4.
+
+🍺  /opt/homebrew/Cellar/mongodb-database-tools/100.9.5: 15 files, 114.2MB, built in 6 seconds
+==> Installing mongodb/brew/mongodb-community dependency: mongosh
+==> Downloading https://ghcr.io/v2/homebrew/core/mongosh/manifests/2.3.0
+Already downloaded: /Users/devchhatbar/Library/Caches/Homebrew/downloads/a097f4a0b41df76a8014f02e41c790349b7177d4c2244583d2f24fda7bca8611--mongosh-2.3.0.bottle_manifest.json
+==> Pouring mongosh--2.3.0.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/mongosh/2.3.0: 12,171 files, 68.3MB
+==> Installing mongodb/brew/mongodb-community
+==> Caveats
+To start mongodb/brew/mongodb-community now and restart at login:
+  brew services start mongodb/brew/mongodb-community
+==> Summary
+🍺  /opt/homebrew/Cellar/mongodb-community/7.0.14: 13 files, 267.4MB, built in 3 seconds
+==> Running `brew cleanup mongodb-community`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> mongodb-community
+To start mongodb/brew/mongodb-community now and restart at login:
+  brew services start mongodb/brew/mongodb-community
+devchhatbar@Devs-MBP ~ %  mongod
+{"t":{"$date":"2024-08-28T16:47:10.357+01:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"thread1","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+{"t":{"$date":"2024-08-28T16:47:10.357+01:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"thread1","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":21},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":21},"outgoing":{"minWireVersion":6,"maxWireVersion":21},"isInternalClient":true}}}
+{"t":{"$date":"2024-08-28T16:47:10.363+01:00"},"s":"I",  "c":"NETWORK",  "id":4648602, "ctx":"thread1","msg":"Implicit TCP FastOpen in use."}
+{"t":{"$date":"2024-08-28T16:47:10.364+01:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"thread1","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+{"t":{"$date":"2024-08-28T16:47:10.364+01:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"thread1","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+{"t":{"$date":"2024-08-28T16:47:10.364+01:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"thread1","msg":"Multi threading initialized"}
+{"t":{"$date":"2024-08-28T16:47:10.364+01:00"},"s":"I",  "c":"TENANT_M", "id":7091600, "ctx":"thread1","msg":"Starting TenantMigrationAccessBlockerRegistry"}
+{"t":{"$date":"2024-08-28T16:47:10.364+01:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":45447,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"Devs-MBP"}}
+{"t":{"$date":"2024-08-28T16:47:10.364+01:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"7.0.14","gitVersion":"ce59cfc6a3c5e5c067dca0d30697edd68d4f5188","modules":[],"allocator":"system","environment":{"distarch":"aarch64","target_arch":"aarch64"}}}}
+{"t":{"$date":"2024-08-28T16:47:10.364+01:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Mac OS X","version":"23.0.0"}}}
+{"t":{"$date":"2024-08-28T16:47:10.364+01:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{}}}
+{"t":{"$date":"2024-08-28T16:47:10.365+01:00"},"s":"I",  "c":"NETWORK",  "id":5693100, "ctx":"initandlisten","msg":"Asio socket.set_option failed with std::system_error","attr":{"note":"acceptor TCP fast open","option":{"level":6,"name":261,"data":"00 04 00 00"},"error":{"what":"set_option: Invalid argument","message":"Invalid argument","category":"asio.system","value":22}}}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"E",  "c":"CONTROL",  "id":20557,   "ctx":"initandlisten","msg":"DBException in initAndListen, terminating","attr":{"error":"NonExistentPath: Data directory /data/db not found. Create the missing directory or specify another path using (1) the --dbpath command line option, or (2) by adding the 'storage.dbPath' option in the configuration file."}}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"initandlisten","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"initandlisten","msg":"Attempting to enter quiesce mode"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"-",        "id":6371601, "ctx":"initandlisten","msg":"Shutting down the FLE Crud thread pool"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"initandlisten","msg":"Shutting down the MirrorMaestro"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"initandlisten","msg":"Shutting down the WaitForMajorityService"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"initandlisten","msg":"Shutdown: going to close listening sockets"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"initandlisten","msg":"Shutting down the global connection pool"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"CONTROL",  "id":4784906, "ctx":"initandlisten","msg":"Shutting down the FlowControlTicketholder"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"initandlisten","msg":"Stopping further Flow Control ticket acquisitions."}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"initandlisten","msg":"Shutting down the ReplicaSetMonitor"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"initandlisten","msg":"Shutting down the MigrationUtilExecutor"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"MigrationUtil-TaskExecutor","msg":"Killing all outstanding egress activity."}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"COMMAND",  "id":4784923, "ctx":"initandlisten","msg":"Shutting down the ServiceEntryPoint"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"initandlisten","msg":"Shutting down the TTL monitor"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"CONTROL",  "id":6278511, "ctx":"initandlisten","msg":"Shutting down the Change Stream Expired Pre-images Remover"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"initandlisten","msg":"Acquiring the global lock for shutdown"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"initandlisten","msg":"Dropping the scope cache for shutdown"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"initandlisten","msg":"Now exiting"}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"CONTROL",  "id":8423404, "ctx":"initandlisten","msg":"mongod shutdown complete","attr":{"Summary of time elapsed":{"Statistics":{"Enter terminal shutdown":"0 ms","Step down the replication coordinator for shutdown":"0 ms","Time spent in quiesce mode":"0 ms","Shut down FLE Crud subsystem":"0 ms","Shut down MirrorMaestro":"0 ms","Shut down WaitForMajorityService":"0 ms","Shut down the transport layer":"0 ms","Shut down the global connection pool":"0 ms","Shut down the flow control ticket holder":"0 ms","Shut down the replica set monitor":"0 ms","Shut down the migration util executor":"0 ms","Shut down the TTL monitor":"0 ms","Shut down expired pre-images and documents removers":"0 ms","Wait for the oplog cap maintainer thread to stop":"0 ms","Shut down full-time data capture":"0 ms","shutdownTask total elapsed time":"0 ms"}}}}
+{"t":{"$date":"2024-08-28T16:47:10.366+01:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"initandlisten","msg":"Shutting down","attr":{"exitCode":100}}
+devchhatbar@Devs-MBP ~ % brew services start mongodb/brew/mongodb-community
+==> Tapping homebrew/services
+Cloning into '/opt/homebrew/Library/Taps/homebrew/homebrew-services'...
+remote: Enumerating objects: 3206, done.
+remote: Counting objects: 100% (667/667), done.
+remote: Compressing objects: 100% (291/291), done.
+remote: Total 3206 (delta 417), reused 534 (delta 370), pack-reused 2539 (from 1)
+Receiving objects: 100% (3206/3206), 905.88 KiB | 1.41 MiB/s, done.
+Resolving deltas: 100% (1558/1558), done.
+Tapped 2 commands (48 files, 1MB).
+==> Successfully started `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP ~ % brew services stop  mongodb/brew/mongodb-community
+Stopping `mongodb-community`... (might take a while)
+==> Successfully stopped `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP ~ % cd Desktop 
+devchhatbar@Devs-MBP Desktop % cd Arusha 
+devchhatbar@Devs-MBP Arusha % brew services start mongodb/brew/mongodb-community
+==> Successfully started `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP Arusha % node index.js                                     
+Server is running on http://localhost:3000
+MongoDB connection error: MongooseServerSelectionError: connection <monitor> to [::1]:3000 closed
+    at _handleConnectionErrors (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:897:11)
+    at NativeConnection.openUri (/Users/devchhatbar/Desktop/Arusha/node_modules/mongoose/lib/connection.js:848:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:3000' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+^C
+devchhatbar@Devs-MBP Arusha % brew services stop  mongodb/brew/mongodb-community
+Stopping `mongodb-community`... (might take a while)
+==> Successfully stopped `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP Arusha % mongosh
+Current Mongosh Log ID:	66cf5e13e9a83e042af67ce1
+Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.0
+MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+devchhatbar@Devs-MBP Arusha % cd
+devchhatbar@Devs-MBP ~ % pwd
+/Users/devchhatbar
+devchhatbar@Devs-MBP ~ % mongosh
+Current Mongosh Log ID:	66cf64f42b9dd506964e7f52
+Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.0
+MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+devchhatbar@Devs-MBP ~ % brew services start mongodb/brew/mongodb-community
+==> Successfully started `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP ~ % mongosh
+Current Mongosh Log ID:	66cf65010ddbc693f7c90a00
+Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.0
+MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+devchhatbar@Devs-MBP ~ % brew services start mongodb/brew/mongodb-community7.0
+Error: No available formula with the name "mongodb/brew/mongodb-community7.0". Did you mean mongodb/brew/mongodb-community@5.0, mongodb/brew/mongodb-community@6.0, mongodb/brew/mongodb-community, mongodb/brew/mongodb-community@4.4, mongodb/brew/mongodb-community-shell or mongodb/brew/mongodb-community-shell@4.4?
+devchhatbar@Devs-MBP ~ % brew services stop  mongodb/brew/mongodb-community   
+Stopping `mongodb-community`... (might take a while)
+==> Successfully stopped `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP ~ % cd Desktop 
+devchhatbar@Devs-MBP Desktop % cd Arusha 
+devchhatbar@Devs-MBP Arusha % ls
+index.js		node_modules		package.json		routes
+models			package-lock.json	public
+devchhatbar@Devs-MBP Arusha % brew services start mongodb-community@7.0
+==> Successfully started `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP Arusha % mongosh
+Current Mongosh Log ID:	66cf653aeaf0f5cf2c5435e2
+Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.0
+Using MongoDB:		7.0.14
+Using Mongosh:		2.3.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+------
+   The server generated these startup warnings when booting
+   2024-08-28T18:58:15.093+01:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show
+MongoshInvalidInputError: [COMMON-10001] 'undefined' is not a valid argument for "show".
+test> *
+Uncaught:
+SyntaxError: Unexpected token (1:0)
+
+> 1 | *
+    | ^
+  2 |
+
+test> show databases
+admin   40.00 KiB
+config  12.00 KiB
+local   72.00 KiB
+test> db
+test
+test> show dbs
+admin   40.00 KiB
+config  12.00 KiB
+local   72.00 KiB
+test> use local
+switched to db local
+local> db
+local
+local> show db
+MongoshInvalidInputError: [COMMON-10001] 'db' is not a valid argument for "show".
+local> back
+ReferenceError: back is not defined
+local> 
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+local> 
+devchhatbar@Devs-MBP Arusha % brew services stop mongodb-community@7.0
+Stopping `mongodb-community`... (might take a while)
+==> Successfully stopped `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP Arusha % brew services start mongodb-community@7.0
+==> Successfully started `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP Arusha % node index.js                                        
+Server is running on http://localhost:3000
+MongoDB connected
+^C
+devchhatbar@Devs-MBP Arusha % node index.js
+Server is running on http://localhost:3000
+MongoDB connected
+^C
+devchhatbar@Devs-MBP Arusha % bre services stop mongodb-community@7.0  
+zsh: command not found: bre
+devchhatbar@Devs-MBP Arusha % brew services stop mongodb-community@7.0
+Stopping `mongodb-community`... (might take a while)
+==> Successfully stopped `mongodb-community` (label: homebrew.mxcl.mongodb-community)
+devchhatbar@Devs-MBP Arusha % 
