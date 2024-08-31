@@ -2,6 +2,7 @@ require('dotenv').config();
 
 
 const express = require('express');
+const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -9,6 +10,10 @@ const cors = require('cors');
 //To initialise the express app:
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Set up the public directory for static files
+app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'source')));
 
 //Middleware (which is where all the functions have access to the request object, the response obkect and the next middelware function in the app's request-response cycel. )
 app.use(cors()); //Should enable CORS
